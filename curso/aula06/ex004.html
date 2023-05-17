@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`Olá ${nome}! Seu nome tem ${nome.length} letras<br>`)
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br>`)
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}`)
+
+        //s.length - quantos caracteres a string tem
+        //s.toUpperCase() - tudo para maiísculas
+        //s.toLowerCase() - tudo para minúsculas
+
+        //Para números. de 1545.5 para aparecer 1545.50 usar n.toFixed(2)
+        //Para trocar . para virgula .replace('.',',')
+        // Para converter um número em moeda: n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+    </script>
+</body>
+</html>
