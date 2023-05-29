@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora exata</title>
+</head>
+<body>
+    <main>
+        <h1>Hora Exata</h1>
+
+        <div>Clique para ver que horas são:</div>
+
+        <div><input type="button" value="Verificar" onclick="enviar()"></div>
+
+        <div id="res"></div>
+    </main>
+
+    <script>
+        function enviar(){
+            var agora = new Date()
+            var hora = agora.getHours()
+
+            res.innerHTML = `Agora são exatamente ${hora} horas.`
+
+            if (hora < 6) {
+                res.innerHTML += '<p>Boa madrugada!</p>'
+            } else if (hora < 12) {
+                res.innerHTML += '<p>Bom dia!</p>'
+            } else if (hora <=18) {
+                res.innerHTML += '<p>Boa tarde!</p>'
+            } else {
+                res.innerHTML += '<p>Boa noite!</p>'
+            }
+        }
+    </script>
+</body>
+</html>
