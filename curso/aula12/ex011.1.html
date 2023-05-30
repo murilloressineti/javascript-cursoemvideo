@@ -5,6 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Votação</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(220, 255, 199);
+        }
+
+        h1 {
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        main {
+            margin: auto;
+            margin-top: 50px;
+            padding: 20px;
+            max-width: 400px;
+            background-color: white;
+
+            text-align: center;
+
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.295);
+        }
+
+        #idade {
+            padding: 5px;
+            margin-bottom: 10px;
+            width: 50px;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.295);
+        }
+
+        #button {
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 50px;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.295);
+            background-color: rgb(66, 255, 113);
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+
+        #res > p {
+           font-size: 2em;
+           padding: 5px; 
+        }
+    </style>
 </head>
 <body>
     <main>
@@ -14,7 +67,7 @@
         </p>
 
         <div>
-            <input type="button" value="Verificar" onclick="enviar()">
+            <input type="button" value="Verificar" id="button" onclick="enviar()">
         </div>
 
         <div id="res"></div>
@@ -36,7 +89,7 @@
             } else {
                 res.innerHTML += '<p>Voto obrigatório</p>'
             }
-            res.innerHTML += 'Boa votação'
+            res.innerHTML += 'Boa votação!'
         }
     </script>
 </body>
